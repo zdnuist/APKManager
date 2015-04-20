@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+     >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dip"
+        android:paddingBottom="10dip"
+        >
+	<LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/topview_textlayout"
+	    android:layout_centerInParent="true"
+	    android:gravity="center"
+	    android:orientation="vertical"
+	    >
+	    <TextView
+	        android:id="@+id/topview_tip"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="下拉可以刷新"
+	        />
+	    <TextView
+	        android:id="@+id/topview_updatetime"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="更新时间为..."
+	        />
+	    </LinearLayout>
+	    
+	<ImageView
+	    android:id="@+id/topview_arrow"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/indicator_arrow"
+	    android:layout_toLeftOf="@id/topview_textlayout"
+	    android:layout_marginRight="20dip"
+	    />
+	<ProgressBar
+	    android:id="@+id/topview_progressbar"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toLeftOf="@id/topview_textlayout"
+	    android:layout_marginRight="20dip"
+	    style="@android:style/Widget.ProgressBar.Small"
+	    android:visibility="gone"
+	    />
+	</RelativeLayout>
+</LinearLayout>
